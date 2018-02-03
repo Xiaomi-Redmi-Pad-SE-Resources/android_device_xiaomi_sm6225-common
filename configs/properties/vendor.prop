@@ -265,11 +265,6 @@ ro.netflix.bsp_rev=Q6115-31409-1
 vendor.pasr.activemode.enabled=true
 vendor.power.pasr.enabled=true
 
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
-ro.vendor.perf-hal.ver=2.3
-ro.vendor.perf.scroll_opt=1
-
 # Radio
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.rcs.singlereg.feature=1
