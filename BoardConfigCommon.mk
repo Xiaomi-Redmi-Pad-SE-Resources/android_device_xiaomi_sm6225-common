@@ -158,6 +158,7 @@ endif
 
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
+TARGET_USES_INTERACTION_BOOST := true
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
