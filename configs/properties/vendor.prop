@@ -245,6 +245,9 @@ vendor.hw.fm.init=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+
 # Gatekeeper
 vendor.gatekeeper.is_security_level_spu=0
 
