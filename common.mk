@@ -180,7 +180,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator-V1-ndk.vendor \
     android.hardware.graphics.common-V3-ndk.vendor \
-    android.hardware.light-V2-ndk.vendor \
     android.hardware.memtrack-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V1-ndk.vendor \
     vendor.qti.hardware.display.config-V2-ndk.vendor \
@@ -337,6 +336,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
 
 # Lineage Health
 PRODUCT_PACKAGES += \
