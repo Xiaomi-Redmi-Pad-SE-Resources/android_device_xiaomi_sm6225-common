@@ -280,6 +280,9 @@ vendor.power.pasr.enabled=true
 # QCOM
 persist.vendor.qcomsysd.enabled=1
 
+# Radio
+persist.vendor.radio.redir_party_num=0
+
 # Sensors
 persist.vendor.sensors.debug.ssc_qmi_debug=true
 persist.vendor.sensors.enable.bypass_worker=true
