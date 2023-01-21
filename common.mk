@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     libdisplayconfig.qti \
-    libdisplayconfig.qti.vendor \
     libdisplayconfig.system.qti \
     libgralloc.qti \
     libqdMetaData \
