@@ -1,3 +1,6 @@
+# Charger
+binder_call(system_server, vendor_hal_micharge_xiaomi_default)
+
 # Displayfeature
 allow system_server vendor_hal_displayfeature_xiaomi_default:binder { call transfer };
 
