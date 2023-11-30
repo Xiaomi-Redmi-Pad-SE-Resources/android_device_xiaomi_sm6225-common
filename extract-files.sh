@@ -83,6 +83,7 @@ function blob_fixup() {
         vendor/lib*/libdlbdsservice.so           |\
         vendor/lib*/libdlbpreg.so                |\
         vendor/lib*/libqc2audio_hwaudiocodec.so  |\
+        vendor/lib*/hw/displayfeature.default.so |\
         vendor/lib*/soundfx/libdlbvol.so         |\
         vendor/lib*/soundfx/libhwdap.so)
             [ "$2" = "" ] && return 0
