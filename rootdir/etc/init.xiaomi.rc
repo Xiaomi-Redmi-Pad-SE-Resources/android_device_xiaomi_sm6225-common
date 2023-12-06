@@ -80,7 +80,7 @@ service vendor.goodix-events /vendor/bin/init.goodix.events.sh
     disabled
     oneshot
 
-service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors@2.1-service.xiaomi-multihal
+service vendor.sensors-hal-2-1-multihal /vendor/bin/hw/android.hardware.sensors-service.xiaomi-multihal
     override
     class hal
     user system
