@@ -375,6 +375,10 @@ on property:vendor.post_boot.parsed=1
     write /proc/sys/vm/swappiness 180
     write /proc/sys/vm/vfs_cache_pressure 50
 
+    # CPUSets
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,7
+    setprop dalvik.vm.dex2oat-threads 6
+
     # Disable native stats collection service
     stop statsd
 
