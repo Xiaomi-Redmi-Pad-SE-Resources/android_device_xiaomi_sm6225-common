@@ -377,3 +377,6 @@ on property:vendor.post_boot.parsed=1
 
     # Disable native stats collection service
     stop statsd
+
+on property:dalvik.vm.heapstartsize=16
+    write /proc/sys/vm/watermark_boost_factor 0
