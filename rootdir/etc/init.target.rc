@@ -372,6 +372,7 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
 on property:vendor.post_boot.parsed=1
     # Disable process_reclaim
     write /sys/module/process_reclaim/parameters/enable_process_reclaim 0
+    write /proc/sys/vm/swappiness 180
 
     # Disable native stats collection service
     stop statsd
