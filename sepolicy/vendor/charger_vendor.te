@@ -1,1 +1,4 @@
-allow charger_vendor vendor_sysfs_graphics:file rw_file_perms;
+# Make charger_vendor permissive
+userdebug_or_eng(`
+  permissive charger_vendor;
+')
