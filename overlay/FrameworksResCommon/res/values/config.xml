@@ -109,6 +109,9 @@
         <item>0</item> <!-- COLOR_MODE_DEFAULT -->
     </integer-array>    
 
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">"android.sensor.light"</string>
+
     <!-- Is the device capable of hot swapping an UICC Card -->
     <bool name="config_hotswapCapable">true</bool>
 
