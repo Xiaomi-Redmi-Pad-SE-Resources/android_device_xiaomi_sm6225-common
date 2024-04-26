@@ -70,7 +70,7 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system_ext/lib*/libwfdservice.so)
+        system_ext/lib64/libwfdservice.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
             ;;
@@ -78,14 +78,14 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-        vendor/lib*/libcodec2_soft_ac4dec.so     |\
-        vendor/lib*/libcodec2_soft_ddpdec.so     |\
-        vendor/lib*/libdlbdsservice.so           |\
-        vendor/lib*/libdlbpreg.so                |\
-        vendor/lib*/libqc2audio_hwaudiocodec.so  |\
-        vendor/lib*/hw/displayfeature.default.so |\
-        vendor/lib*/soundfx/libdlbvol.so         |\
-        vendor/lib*/soundfx/libhwdap.so)
+        vendor/lib64/libcodec2_soft_ac4dec.so     |\
+        vendor/lib64/libcodec2_soft_ddpdec.so     |\
+        vendor/lib64/libdlbdsservice.so           |\
+        vendor/lib64/libdlbpreg.so                |\
+        vendor/lib64/libqc2audio_hwaudiocodec.so  |\
+        vendor/lib64/hw/displayfeature.default.so |\
+        vendor/lib64/soundfx/libdlbvol.so         |\
+        vendor/lib64/soundfx/libhwdap.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
