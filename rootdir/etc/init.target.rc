@@ -368,3 +368,7 @@ service vendor.power /vendor/bin/hw/android.hardware.power-service-qti
     class hal
     user system
     group system input    
+
+on property:vendor.post_boot.parsed=1
+    # Disable process_reclaim
+    write /sys/module/process_reclaim/parameters/enable_process_reclaim 0
