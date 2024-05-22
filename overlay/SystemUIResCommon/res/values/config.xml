@@ -49,4 +49,6 @@
         <item>0</item>
     </integer-array>
 
+    <!-- Whether show refresh rate QS tile -->
+    <bool name="config_showRefreshRateQsTile">true</bool>
 </resources>
