@@ -455,6 +455,7 @@ PRODUCT_PACKAGES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libqti_vndfwk_detect_vendor \
     libqti_vndfwk_detect_vendor.vendor \
@@ -484,7 +485,9 @@ endif
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    librmnetctl
+    librmnetctl \
+    libsqlite.vendor:64 \
+    libsysutils.vendor:64
 
 # Sensors
 PRODUCT_PACKAGES += \
