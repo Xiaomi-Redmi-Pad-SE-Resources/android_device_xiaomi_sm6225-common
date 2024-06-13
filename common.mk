@@ -436,6 +436,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Perf
 PRODUCT_PACKAGES += \
+    libutilscallstack.vendor \
     vendor.qti.hardware.perf@2.3.vendor
 
 PRODUCT_COPY_FILES += \
