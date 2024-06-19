@@ -29,6 +29,10 @@ on boot
     chmod 0664 /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
     chown system graphics /sys/bus/platform/devices/soc:xiaomi_fingerprint/fingerdown
 
+on property:ro.boot.product.hardware.sku=topaz
+    start nfc_hal_service
+
+on property:ro.boot.product.hardware.sku=sapphiren
     start nfc_hal_service
 
 service stflashtool /vendor/bin/STFlashTool
