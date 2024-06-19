@@ -188,6 +188,10 @@ on boot
     chmod 0664 /sys/class/thermal/thermal_message/boost
     chown system system /sys/class/thermal/thermal_message/balance_mode
 
+# Xiaomi touch
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 #touch funtions permissions setting
 	chown system system /sys/class/touch/touch_dev/palm_sensor
 	chmod 0664 /sys/class/touch/touch_dev/palm_sensor
