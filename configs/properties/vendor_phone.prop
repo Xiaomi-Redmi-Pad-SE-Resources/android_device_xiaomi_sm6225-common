@@ -34,7 +34,6 @@ persist.vendor.rcs.singlereg.feature=1
 ril.subscription.types=NV,RUIM
 rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=33,33
-ro.telephony.sim_slots.count=1
 ro.vendor.radio.fastdormancy=true
 ro.vendor.radio.features_common=3
 telephony.active_modems.max_count=2
