@@ -63,12 +63,6 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib64/libqtikeymint.so)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
-        vendor/lib*/soundfx/libdlbvol.so|vendor/lib*/soundfx/libhwdap.so|vendor/lib64/libdlbdsservice.so | vendor/lib64/libcodec2_soft_ac4dec.so | vendor/lib64/libcodec2_soft_ddpdec.so)
-            "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
-            ;;
-        vendor/etc/dolby/dax-default.xml)
-            sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
-            ;;
     esac
 }
 

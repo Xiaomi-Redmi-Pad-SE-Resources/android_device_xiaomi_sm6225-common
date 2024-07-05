@@ -62,9 +62,6 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libvolumelistener
 
-PRODUCT_PACKAGES += \
-    XiaomiDolby
-
 AUDIO_HAL_DIR := hardware/qcom-caf/sm6225/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
@@ -351,12 +348,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
-    libavservices_minijail_vendor \
     libcodec2_hidl@1.0.vendor \
-    libcodec2_hidl@1.1.vendor \
-    libcodec2_hidl@1.2.vendor \
     libcodec2_hidl_plugin.vendor \
-    libcodec2_soft_common.vendor \
     libcodec2_vndk.vendor \
     libsfplugin_ccodec_utils.vendor \
     libplatformconfig
