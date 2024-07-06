@@ -521,6 +521,9 @@ vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_khaje_v0/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml
+vendor/lib/libEvrcSwCodec.so
+vendor/lib/libQcelp13SwCodec.so
+vendor/lib/libdsd2pcm.so
 vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
@@ -542,10 +545,13 @@ vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
 vendor/lib/qti.video.utils.videobufferlayout.so
+vendor/lib64/libEvrcSwCodec.so
+vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libcodec2_soft_ac4dec.so
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libdeccfg.so
+vendor/lib64/libdsd2pcm.so
 vendor/lib64/libqc2audio_base.so
 vendor/lib64/libqc2audio_basecodec.so
 vendor/lib64/libqc2audio_core.so
@@ -585,20 +591,6 @@ vendor/lib64/libmisight.so
 
 # Neural
 vendor/lib64/libhta.so
-
-# OMX
-vendor/lib/libAlacSwDec.so
-vendor/lib/libApeSwDec.so
-vendor/lib/libEvrcSwCodec.so
-vendor/lib/libFlacSwDec.so
-vendor/lib/libQcelp13SwCodec.so
-vendor/lib/libdsd2pcm.so
-vendor/lib64/libAlacSwDec.so
-vendor/lib64/libApeSwDec.so
-vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libFlacSwDec.so
-vendor/lib64/libQcelp13SwCodec.so
-vendor/lib64/libdsd2pcm.so
 
 # Perf
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service
