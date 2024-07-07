@@ -4,8 +4,5 @@ dalvik.vm.dex2oat64.enabled=true
 # GPS
 persist.sys.gps.fence=true
 
-# Graphics
-persist.wm.enable_remote_keyguard_animation=0
-
 # Media
 vendor.media.target_variant=_khaje_v0
