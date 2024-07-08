@@ -75,7 +75,7 @@ function blob_fixup() {
             ;;
         vendor/etc/media_codecs.xml|vendor/etc/media_codecs_khaje_v0.xml)
             [ "$2" = "" ] && return 0
-            sed -Ei "/media_codecs_(google_audio|google_telephony|vendor_audio)/d" "${2}"
+            sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib64/libqtikeymint.so)
             [ "$2" = "" ] && return 0
