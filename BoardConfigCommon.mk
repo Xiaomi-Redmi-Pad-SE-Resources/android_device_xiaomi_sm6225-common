@@ -43,8 +43,6 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
 
 # Audio
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
-
 AUDIO_FEATURE_ENABLED_DLKM := true
 AUDIO_FEATURE_ENABLED_DTS_EAGLE := false
 AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT := true
