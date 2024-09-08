@@ -73,7 +73,7 @@ function blob_fixup() {
         system_ext/lib*/libwfdservice.so)
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
             ;;
-        vendor/etc/media_codecs.xml|vendor/etc/media_codecs_khaje_v0.xml)
+        vendor/etc/media_codecs.xml)
             [ "$2" = "" ] && return 0
             sed -Ei "/media_codecs_(google_audio|google_c2|google_telephony|vendor_audio)/d" "${2}"
             ;;
