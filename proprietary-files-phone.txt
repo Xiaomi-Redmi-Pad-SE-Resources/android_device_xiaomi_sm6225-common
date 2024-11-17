@@ -141,11 +141,7 @@ vendor/lib64/vendor.qti.latency@2.1.so
 vendor/lib64/vendor.qti.latency@2.2.so
 
 # IR
-vendor/bin/consumerird
-vendor/bin/hw/android.hardware.ir-service.example
-vendor/etc/init/android.hardware.ir-service.example.rc
-vendor/etc/vintf/manifest/android.hardware.ir-service.example.xml
-vendor/lib64/hw/consumerir.qcom.so
+vendor/lib64/hw/consumerir.qcom.so:vendor/lib64/hw/consumerir.bengal.so
 
 # Mlipay
 odm/bin/mlipayd@1.1:vendor/bin/mlipayd@1.1
