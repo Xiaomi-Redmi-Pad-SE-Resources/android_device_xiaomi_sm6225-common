@@ -88,6 +88,7 @@
             <name>IAGM</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IAGM/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.alarm</name>
@@ -317,6 +318,7 @@
             <name>IMiFxTunnel</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IMiFxTunnel/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.xiaomi.hw.touchfeature</name>
