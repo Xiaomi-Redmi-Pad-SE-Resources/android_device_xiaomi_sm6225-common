@@ -291,8 +291,9 @@ persist.vendor.sensors.hal_trigger_ssr=false
 persist.vendor.sensors.support_direct_channel=false
 
 # USB
-persist.sys.usb.config=none
+ro.boot.usb.dwc3_msm=4e00000.ssusb
 sys.usb.mtp.batchcancel=1
+vendor.usb.controller=4e00000.dwc3
 vendor.usb.diag.func.name=ffs
 vendor.usb.dpl.inst.name=dpl
 vendor.usb.qdss.inst.name=qdss_sw
@@ -300,7 +301,7 @@ vendor.usb.rmnet.func.name=gsi
 vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=1
-vendor.usb.use_gadget_hal=0
+vendor.usb.use_gadget_hal=1
 
 # Wi-Fi
 wifi.aware.interface=wifi-aware0
