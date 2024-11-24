@@ -1,5 +1,21 @@
 <manifest version="5.0" type="device" target-level="7">
     <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>INfc</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.2::INfc/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+        <fqname>@1.2::ISecureElement/SIM2</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -57,12 +73,7 @@
             <name>IGoodixFingerprintDaemon</name>
             <instance>default</instance>
         </interface>
-        <interface>
-            <name>IGoodixFingerprintDaemonExt</name>
-            <instance>default</instance>
-        </interface>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
-        <fqname>@2.1::IGoodixFingerprintDaemonExt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.dpmservice</name>
@@ -93,7 +104,7 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::ISoter/default</fqname>
-    </hal>m
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.ims.callinfo</name>
         <transport>hwbinder</transport>
@@ -136,21 +147,14 @@
         </interface>
         <fqname>@1.0::IXiaomiFingerprint/default</fqname>
     </hal>
-    <!-- < NFC > -->
     <hal format="hidl">
-        <name>android.hardware.nfc</name>
+        <name>vendor.xiaomi.hardware.fx.tunnel</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
+        <version>1.0</version>
         <interface>
-            <name>INfc</name>
+            <name>IMiFxTunnel</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.2::INfc/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.secure_element</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.2::ISecureElement/SIM1</fqname>
-        <fqname>@1.2::ISecureElement/SIM2</fqname>
+        <fqname>@1.0::IMiFxTunnel/default</fqname>
     </hal>
 </manifest>
