@@ -4,5 +4,8 @@ allow audioserver mediaserver:file { open read };
 allow audioserver system_app:dir search;
 allow audioserver hal_audio_default:process signal;
 allow audioserver sound_device:chr_file rw_file_perms;
+allow audioserver unlabeled:file { read write open getattr };
 get_prop(audioserver, bootanim_system_prop)
+get_prop(audioserver, vendor_audio_prop)
+hal_client_domain(audioserver, hal_dms)
 set_prop(audioserver, audio_prop)
