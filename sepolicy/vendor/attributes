@@ -1,3 +1,6 @@
+# Audio
+hal_attribute(dms)
+
 # Mlipay
 attribute hal_mlipay;
 attribute hal_mlipay_client;

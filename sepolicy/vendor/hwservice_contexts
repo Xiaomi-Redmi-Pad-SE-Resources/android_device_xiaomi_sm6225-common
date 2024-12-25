@@ -1,3 +1,6 @@
+# Audio
+vendor.dolby.hardware.dms::IDms    u:object_r:hal_dms_hwservice:s0
+
 # Displayfeature
 vendor.xiaomi.hardware.displayfeature::IDisplayFeature       u:object_r:vendor_hal_displayfeature_xiaomi_hwservice:s0
 
