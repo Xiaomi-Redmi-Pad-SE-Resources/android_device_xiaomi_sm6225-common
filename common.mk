@@ -290,8 +290,10 @@ endif
 
 # Init scripts
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    fstab.qcom.vendor_ramdisk \
+    fstab.default \
+    fstab.default.vendor_ramdisk \
+    fstab.emmc \
+    fstab.emmc.vendor_ramdisk \
     init.qcom.rc \
     init.qti.kernel.rc \
     init.recovery.qcom.rc \
@@ -317,7 +319,8 @@ PRODUCT_PACKAGES += \
     vendor_modprobe.sh
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
+    $(LOCAL_PATH)/rootdir/etc/fstab.default:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.default \
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc
 
 # Keymaster
 PRODUCT_PACKAGES += \
