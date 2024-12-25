@@ -157,7 +157,7 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor_phone.prop
 endif
 
 # Power
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power/power-mode.cpp
+TARGET_TAP_TO_WAKE_NODE := "/proc/tp_gesture"
 
 # Recovery
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
