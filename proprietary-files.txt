@@ -228,6 +228,8 @@ vendor/etc/display/advanced_sf_offsets.xml
 vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
+vendor/lib/qti.video.utils.videobufferlayout.so
+vendor/lib/sns_client_example.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libdisplayconfig.qti.so
 vendor/lib64/libdisplaydebug.so
@@ -249,6 +251,7 @@ vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib64/qti.video.utils.videobufferlayout.so
+vendor/lib64/sns_client_example.so
 vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
@@ -313,7 +316,6 @@ system_ext/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/etc/init/init.qti.fm.rc
 vendor/etc/init.qti.fm.sh
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/libfmpal.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 
 # Gatekeeper
@@ -338,6 +340,7 @@ vendor/etc/gpfspath_oem_config.xml
 vendor/etc/izat.conf
 vendor/etc/lowi.conf
 vendor/etc/xtwifi.conf
+vendor/lib/libgps.utils.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libengineplugin.so
 vendor/lib64/libgdtap.so
@@ -482,8 +485,6 @@ vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
 vendor/etc/media_khaje_v0/video_system_specs.json
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml
-vendor/lib/android.hardware.media.c2@1.0.so
-vendor/lib/libmediautils_vendor.so
 vendor/lib/libqc2audio_base.so
 vendor/lib/libqc2audio_basecodec.so
 vendor/lib/libqc2audio_core.so
@@ -504,12 +505,11 @@ vendor/lib/libqcodec2_mockqc2filter.so
 vendor/lib/libqcodec2_platform.so
 vendor/lib/libqcodec2_utils.so
 vendor/lib/libqcodec2_v4l2codec.so
-vendor/lib64/android.hardware.media.c2@1.0.so
+vendor/lib/libvideotxr.so
 vendor/lib64/libcodec2_soft_ac4dec.so
 vendor/lib64/libcodec2_soft_ddpdec.so
 vendor/lib64/libcodec2_store_dolby.so
 vendor/lib64/libdeccfg.so
-vendor/lib64/libmediautils_vendor.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libmmrtpdecoder_vendor.so
 vendor/lib64/libmmrtpencoder_vendor.so
@@ -533,6 +533,7 @@ vendor/lib64/libqcodec2_mockqc2filter.so
 vendor/lib64/libqcodec2_platform.so
 vendor/lib64/libqcodec2_utils.so
 vendor/lib64/libqcodec2_v4l2codec.so
+vendor/lib64/libvideotxr.so
 
 # Memory
 vendor/lib/libvmmem.so
@@ -581,6 +582,7 @@ vendor/lib/libqti-iopd-client.so
 vendor/lib/libqti-iopd.so
 vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
+vendor/lib/libqti-util.so
 vendor/lib/libskewknob.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
 vendor/lib/vendor.qti.hardware.iop@2.0.so
@@ -597,11 +599,9 @@ vendor/lib64/liblearningmodule.so
 vendor/lib64/liblightninglaunches.so
 vendor/lib64/liblmutils-ns.so
 vendor/lib64/libmemperfd.so
-vendor/lib64/libmemunreachable.so
 vendor/lib64/libmeters-ns.so
 vendor/lib64/libmeters.so
 vendor/lib64/libpasrutils.so
-vendor/lib64/libpcap.so
 vendor/lib64/libperfconfig.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libperfioctl.so
@@ -633,6 +633,9 @@ vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/bin/pd-mapper
 vendor/bin/pm-proxy
 vendor/bin/pm-service
+vendor/lib/libpdmapper.so
+vendor/lib/libpdnotifier.so
+vendor/lib/libperipheral_client.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libpdnotifier.so
 vendor/lib64/libperipheral_client.so
@@ -693,6 +696,9 @@ vendor/etc/init/qmipriod.debug.rc
 vendor/etc/init/qmipriod.rc
 vendor/etc/sdr_config.cfg
 vendor/etc/sec_config
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_encdec.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libidl.so
 vendor/lib64/libqmi.so
@@ -811,6 +817,7 @@ vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
 vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc
 vendor/lib64/libSecureUILib.so
+vendor/lib64/libStDrvInt.so
 vendor/lib64/libloadtrusteduiapp.so
 vendor/lib64/libsecureui.so
 vendor/lib64/libsecureui_svcsock.so
@@ -819,7 +826,9 @@ vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # UWB
 vendor/lib/libstreamparser.so
+vendor/lib/libvideoutils.so
 vendor/lib64/libstreamparser.so
+vendor/lib64/libvideoutils.so
 
 # VPP
 vendor/lib/libmisight.so
@@ -881,6 +890,7 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
