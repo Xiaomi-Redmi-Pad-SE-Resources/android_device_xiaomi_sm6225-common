@@ -1,4 +1,4 @@
-# All blobs below are extracted from sapphire V816.0.10.0.UNGMIXM
+# All blobs below are extracted from sapphire V816.0.11.0.UNGMIXM
 
 # ADSP
 vendor/bin/adsprpcd
