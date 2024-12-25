@@ -282,12 +282,6 @@ PRODUCT_PACKAGES += \
     IFAAService
 endif
 
-# IPACM
-PRODUCT_PACKAGES += \
-    ipacm \
-    IPACM_cfg.xml \
-    IPACM_Filter_cfg.xml
-
 # IR
 ifneq ($(TARGET_IS_TABLET),true)
 PRODUCT_PACKAGES += \
