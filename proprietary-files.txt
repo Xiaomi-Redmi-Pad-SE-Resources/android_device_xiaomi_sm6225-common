@@ -784,6 +784,17 @@ vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/lib64/libtime_genoff.so
 
+# Thermal
+vendor/bin/thermal-engine-v2
+vendor/etc/init/init_thermal-engine-v2.rc
+vendor/lib/libthermalclient.so
+vendor/lib64/liblmthermallistner.so
+vendor/lib64/libthermalclient.so
+
+# Thermal (Xiaomi)
+vendor/bin/mi_thermald
+vendor/etc/init/init.mi_thermald.rc
+
 # Trusted Execution Environment connector
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
