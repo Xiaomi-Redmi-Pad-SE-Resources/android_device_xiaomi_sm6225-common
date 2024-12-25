@@ -57,6 +57,10 @@ on boot
     chmod 0660 /sys/bus/platform/devices/soc:fpc1020/modalias
     chmod 0660 /sys/bus/platform/devices/soc:fpc1020/compatible_all
 
+    # Touchpanel
+    chmod 0660 /proc/tp_gesture
+    chown system system /proc/tp_gesture
+
 on property:ro.boot.product.hardware.sku=topaz
     start nfc_hal_service
 
