@@ -1,5 +1,15 @@
 # All blobs below are extracted from sapphire V816.0.10.0.UNGMIXM
 
+# ADSP
+vendor/bin/adsprpcd
+vendor/bin/audioadsprpcd
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
+vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
+vendor/lib/libadsp_default_listener.so
+vendor/lib/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+
 # Alarm
 system_ext/app/PowerOffAlarm/PowerOffAlarm.apk
 system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar
