@@ -156,6 +156,10 @@ PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
 # Display
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.composer-service.rc \
+    vendor.qti.hardware.display.composer-service.xml
+
+PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4.vendor \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     libdisplayconfig.qti \
@@ -173,7 +177,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator@3.0.vendor \
     vendor.qti.hardware.display.allocator@4.0.vendor \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.composer@3.0.vendor \
