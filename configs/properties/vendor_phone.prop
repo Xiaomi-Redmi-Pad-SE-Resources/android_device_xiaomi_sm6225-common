@@ -1,3 +1,6 @@
+# Display
+ro.vendor.display.type=oled
+
 # DPM
 persist.vendor.dpm.feature=11
 persist.vendor.dpm.vndr.feature=1
