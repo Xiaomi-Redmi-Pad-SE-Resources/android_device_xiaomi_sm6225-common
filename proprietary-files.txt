@@ -28,6 +28,10 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libshoebox.so
 
+# Battery
+vendor/bin/battery_stats
+vendor/etc/init/vendor.qti.battery_stats.rc
+
 # Bluetooth
 system_ext/etc/bluetooth/leaudio_configs.xml
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
