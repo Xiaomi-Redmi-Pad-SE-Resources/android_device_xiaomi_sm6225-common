@@ -5,6 +5,7 @@ system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
 vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
+vendor/lib/libdiag.so
 vendor/lib64/libdiag.so
 vendor/lib64/libdiagjni.so
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
@@ -162,7 +163,6 @@ odm/lib64/libmlipay.so:vendor/lib64/libmlipay.so
 odm/lib64/libmlipay@1.1.so:vendor/lib64/libmlipay@1.1.so
 odm/lib64/libteeclientjni.so:vendor/lib64/libteeclientjni.so
 odm/lib64/libwvkeybox.so:vendor/lib64/libwvkeybox.so
-odm/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 
 # Perf configs
 vendor/etc/lm/prekill/prekill_2GB.data
@@ -248,6 +248,7 @@ vendor/etc/vintf/manifest/android.hardware.radio.config.xml
 vendor/etc/vintf/manifest/deviceinfo-saidl.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml
 vendor/etc/telephony_packages.xml
+vendor/lib/libmdmdetect.so
 vendor/lib64/deviceInfoServiceModuleNr.so
 vendor/lib64/lib-rtpcommon.so
 vendor/lib64/lib-rtpcore.so
@@ -296,7 +297,6 @@ vendor/lib64/libqdutils.so
 vendor/lib64/libqesdk2_0.so
 vendor/lib64/libqrtr.so
 vendor/lib64/librcc.so
-vendor/lib64/libreference-ril.so
 vendor/lib64/libril-db.so
 vendor/lib64/libril-legacy.so
 vendor/lib64/libril-qc-ltedirectdisc.so
