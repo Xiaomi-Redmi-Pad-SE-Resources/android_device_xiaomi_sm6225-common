@@ -45,10 +45,6 @@ allow hal_fingerprint_default vendor_sysfs_graphics:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_graphics:file rw_file_perms;
 allow hal_fingerprint_default vendor_sysfs_spss:dir r_dir_perms;
 allow hal_fingerprint_default vendor_sysfs_spss:file rw_file_perms;
-allow hal_fingerprint_default vendor_qdsp_device:chr_file r_file_perms;
-allow hal_fingerprint_default vendor_qdsp_device:file r_file_perms;
-allow hal_fingerprint_default vendor_xdsp_device:chr_file r_file_perms;
-allow hal_fingerprint_default vendor_xdsp_device:file r_file_perms;
 allow hal_fingerprint_default vendor_hal_fingerprint_hwservice_xiaomi:hwservice_manager { add find };
 
 set_prop(hal_fingerprint_default, vendor_fp_prop)
