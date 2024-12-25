@@ -49,13 +49,22 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl
+    android.hardware.soundtrigger@2.3-impl \
+    vendor.qti.hardware.pal@1.0-impl
 
 PRODUCT_PACKAGES += \
+    audio.primary.bengal \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
     libaudiopreprocessing \
+    libfmpal \
+    libhfp_pal \
+    libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
