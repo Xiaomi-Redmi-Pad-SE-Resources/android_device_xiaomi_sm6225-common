@@ -143,6 +143,14 @@ vendor/lib64/vendor.qti.latency@2.2.so
 # IPA
 vendor/etc/init/ipa_fws.rc
 
+# IPACM
+vendor/bin/ipacm
+vendor/etc/init/ipacm.rc
+vendor/etc/IPACM_Filter_cfg.xml
+vendor/etc/IPACM_cfg.xml
+vendor/lib64/libipanat.so
+vendor/lib64/liboffloadhal.so
+
 # IR
 vendor/lib64/hw/consumerir.qcom.so:vendor/lib64/hw/consumerir.bengal.so
 
