@@ -238,6 +238,7 @@ vendor.gatekeeper.is_security_level_spu=0
 
 # Graphics
 debug.egl.hw=0
+debug.graphics.game_default_frame_rate.disabled=true
 debug.mdpcomp.logs=0
 graphics.gpu.profiler.support=true
 ro.hardware.egl=adreno
