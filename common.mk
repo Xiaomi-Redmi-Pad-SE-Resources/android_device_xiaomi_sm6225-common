@@ -52,7 +52,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.pal@1.0-impl
 
 PRODUCT_PACKAGES += \
-    audio.primary.bengal \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -61,12 +60,14 @@ PRODUCT_PACKAGES += \
     libagm_pcm_plugin \
     libagmclient \
     libaudiopreprocessing \
+    libbatterylistener \
     libfmpal \
     libhfp_pal \
     libpalclient \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    libsndcardparser \
     libtinycompress \
     libvolumelistener
 

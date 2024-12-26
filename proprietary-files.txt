@@ -26,6 +26,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
+vendor/lib/hw/audio.primary.bengal.so;DISABLE_CHECKELF
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
 vendor/lib/libar-gsl.so
@@ -38,6 +39,7 @@ vendor/lib/liblx-ar_util.so
 vendor/lib/liblx-osal.so
 vendor/lib/libqtigefar.so
 vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/hw/audio.primary.bengal.so;DISABLE_CHECKELF
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
