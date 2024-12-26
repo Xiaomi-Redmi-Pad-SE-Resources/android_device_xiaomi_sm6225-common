@@ -48,8 +48,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.3-impl \
-    vendor.qti.hardware.pal@1.0-impl
+    android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_PACKAGES += \
     audio.primary.default \
