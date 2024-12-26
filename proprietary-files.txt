@@ -23,24 +23,35 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
 vendor/lib/libar-acdb.so
 vendor/lib/libar-gpr.so
 vendor/lib/libar-gsl.so
 vendor/lib/libar-pal.so;DISABLE_CHECKELF
 vendor/lib/libats.so
 vendor/lib/libaudio_log_utils.so
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdlbpreg.so
 vendor/lib/liblx-ar_util.so
 vendor/lib/liblx-osal.so
 vendor/lib/libqtigefar.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
 vendor/lib64/libar-acdb.so
 vendor/lib64/libar-gpr.so
 vendor/lib64/libar-gsl.so
 vendor/lib64/libar-pal.so;DISABLE_CHECKELF
 vendor/lib64/libats.so
 vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libdlbpreg.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
 vendor/lib64/libqtigefar.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
 
 # Audio AGM
 vendor/lib/libagm.so
@@ -48,12 +59,23 @@ vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 vendor/lib64/libagm.so
 vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
 
+# Audio configurations
+vendor/etc/dolby/dax-default.xml
+
 # Audio SoundFX
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libdlbvol.so
+vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libshoebox.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
 vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libdlbvol.so
+vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
 
 # Battery
 vendor/bin/battery_stats
