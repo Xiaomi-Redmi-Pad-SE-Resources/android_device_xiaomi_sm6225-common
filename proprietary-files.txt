@@ -2,9 +2,7 @@
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/audioadsprpcd
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
-vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
@@ -183,11 +181,9 @@ vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.qti.hardware.display.composer-service
-vendor/bin/init.qti.display_boot.sh
 vendor/bin/ppd
 vendor/bin/qdcmss
 vendor/etc/display/advanced_sf_offsets.xml
-vendor/etc/init/init.qti.display_boot.rc
 vendor/etc/init/qdcmss.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/lib/sns_client_example.so
