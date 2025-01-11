@@ -1,4 +1,5 @@
-# All blobs below are extracted from sapphire V816.0.11.0.UNGMIXM
+# Unpinned blobs from topaz OS2.0.8.0.VMGMIXM
+# sapphiren: OS2.0.6.0.VNHMIXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -18,31 +19,30 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio Dolby
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
-vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/libdlbpreg.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+# Audio Dolby - from sapphiren
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|c6ebdaff686ba23391b72a69b0fdc4d2c95bb1ae
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
+vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
+vendor/lib64/soundfx/libdlbvol.so|4f9e52ad0ce7b0950b0118ab9ededd168006f8ea
+vendor/lib64/soundfx/libhwdap.so|6220c4b3a3c7eab45957fa12388e4ea66b495428
+vendor/lib64/soundfx/libswgamedap.so|6927b04604519fa1e8d9df73f175d07807936688
+vendor/lib64/soundfx/libswvqe.so|6a793d6ea7b485b5bcbdbbe1633499de58ec4acb
+vendor/lib64/libdapparamstorage.so|e80857e364aab0ad2d03edfc8b304ad1c3bad35d
+vendor/lib64/libdlbdsservice.so|22e7590fcd8fb546f831315bb1571624eb5acd98
+vendor/lib64/libdlbpreg.so|5801fb7275c7bb83374887c5b3e671ba216d378f
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|6e1e9bc0f3f9cea00217164fee2e9f918f38d6b8
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so|fa62d676ff1df22fe050c4057e681a969cb5c77d
 
 # Audio SoundFX
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libdlbvol.so
-vendor/lib64/soundfx/libhwdap.so
 vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswvqe.so
 
 # Battery
 vendor/bin/battery_stats
 vendor/etc/init/vendor.qti.battery_stats.rc
 
 # Bluetooth
-system_ext/etc/bluetooth/leaudio_configs.xml
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
@@ -276,6 +276,7 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 
 # FM
+system/lib64/vendor.qti.hardware.fm-V1-ndk.so:system_ext/lib64/vendor.qti.hardware.fm-V1-ndk.so
 system_ext/lib64/fm_helium.so
 system_ext/lib64/libfm-hci.so
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so
@@ -361,8 +362,8 @@ vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
 
 # Hotword Enrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
 product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
+product/priv-app/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND/HotwordEnrollmentYGoogleHEXAGON_WIDEBAND.apk
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
@@ -432,44 +433,44 @@ vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
-# Media
-vendor/bin/hw/vendor.dolby.media.c2@1.0-service
-vendor/bin/hw/vendor.qti.media.c2@1.0-service
-vendor/bin/hw/vendor.qti.media.c2audio@1.0-service
-vendor/etc/init/init.qti.media.rc
-vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2@1.0-service.rc
-vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc
-vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml
-vendor/lib64/libEvrcSwCodec.so
-vendor/lib64/libQcelp13SwCodec.so
-vendor/lib64/libcodec2_soft_ac4dec.so
-vendor/lib64/libcodec2_soft_ddpdec.so
-vendor/lib64/libcodec2_store_dolby.so
-vendor/lib64/libdeccfg.so
-vendor/lib64/libdsd2pcm.so
-vendor/lib64/libqc2audio_base.so
-vendor/lib64/libqc2audio_basecodec.so
-vendor/lib64/libqc2audio_core.so
-vendor/lib64/libqc2audio_hooks.so
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF
-vendor/lib64/libqc2audio_platform.so
-vendor/lib64/libqc2audio_swaudiocodec.so
-vendor/lib64/libqc2audio_utils.so
-vendor/lib64/libqc2colorconvertfilter.so
-vendor/lib64/libqc2filter.so
-vendor/lib64/libqcodec2_base.so
-vendor/lib64/libqcodec2_basecodec.so
-vendor/lib64/libqcodec2_core.so
-vendor/lib64/libqcodec2_filterbase.so
-vendor/lib64/libqcodec2_hooks.so
-vendor/lib64/libqcodec2_mockfilter.so
-vendor/lib64/libqcodec2_mockqc2filter.so
-vendor/lib64/libqcodec2_platform.so
-vendor/lib64/libqcodec2_utils.so
-vendor/lib64/libqcodec2_v4l2codec.so
-vendor/lib64/qti.video.utils.videobufferlayout.so
+# Media - from sapphiren
+vendor/bin/hw/vendor.dolby.media.c2@1.0-service|47c5e28624a6f149c5a96347b5d04503832064cc
+vendor/bin/hw/vendor.qti.media.c2@1.0-service|9d89470c0bfda42b78b84187cd1cf5bf9f574e17
+vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|5ee5c4a0648821ace34075eec238e20dd27fef83
+vendor/etc/init/init.qti.media.rc|ef1332dce782443ffbd36b28c8349611535c6d5a
+vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa51c629ea66dc7
+vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|542d2ae2a92ee21dbb63716ff49392e8e6e433f4
+vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc|51841b9c67dd26b7fe82e24109f1e0a663a3e04a
+vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml|7801d5fb9104883e33e874011caa25c28b7bec71
+vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml|b2bf55472f4729c358ba86d310bed9397e231761
+vendor/lib64/libEvrcSwCodec.so|baf0ea2a04ffd735d0ad49d1831330ecf6f28d0e
+vendor/lib64/libQcelp13SwCodec.so|af7fb39b8cab9d8bfad649045eff0ea3a96c44a0
+vendor/lib64/libcodec2_soft_ac4dec.so|2fd8fb415bf0a8c7af28116c44e1787201b5b989
+vendor/lib64/libcodec2_soft_ddpdec.so|c121d22973fbfedc508d0f94e3c82c70ea2ab491
+vendor/lib64/libcodec2_store_dolby.so|9d16d92301c4fa2f0a23726fe7bb97b2b291cf84
+vendor/lib64/libdeccfg.so|7f00a4121c068f6cd5d4a7d8c971fafe807c8950
+vendor/lib64/libdsd2pcm.so|cda87d311c7adb6fb1d61202a609bd916463ad92
+vendor/lib64/libqc2audio_base.so|00779587ada038abace9daad256a6a174f435067
+vendor/lib64/libqc2audio_basecodec.so|ea470367efc95c4f3678e341fead458494c147e5
+vendor/lib64/libqc2audio_core.so|ef04cb2507e9dd21127b64497d79da976cb1d4d6
+vendor/lib64/libqc2audio_hooks.so|bc4f233cd225127ceb5d098544eb48d71f871b7c
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF|3a5115bebf8a228400f3a89a4355d0ca4f13a6ba
+vendor/lib64/libqc2audio_platform.so|fcfcacfaf9fae2c18f7f1b5a563a5863a70dcfd5
+vendor/lib64/libqc2audio_swaudiocodec.so|081bd6d95cc63f24c3aea2fdc38e6872f71d81a3
+vendor/lib64/libqc2audio_utils.so|2d532831983585308dc5623ac7a78210d0232ce2
+vendor/lib64/libqc2colorconvertfilter.so|0647e7093b77f54f2778b1e222313fa1845ce4d0
+vendor/lib64/libqc2filter.so|e7d8bdd8e36271a1dbf54f55ea17f55a1c8a429f
+vendor/lib64/libqcodec2_base.so|500edc576b0dd57eeed5785588c15f17787f9e0e
+vendor/lib64/libqcodec2_basecodec.so|63702399413e9ed347d65d9ff37828878d494559
+vendor/lib64/libqcodec2_core.so|1ee13f785b8f8173fce313a364bc702b2e0913a1
+vendor/lib64/libqcodec2_filterbase.so|ab1cfd150fc0b01851f0491cef69348c950b1567
+vendor/lib64/libqcodec2_hooks.so|3cce1ac3315effda2e5fcef4044598b2790770cf
+vendor/lib64/libqcodec2_mockfilter.so|44889f24d5d799e28bbc28bd775bba09e2cf9775
+vendor/lib64/libqcodec2_mockqc2filter.so|9da1921cd921df4fe6a3d7803369861913539f11
+vendor/lib64/libqcodec2_platform.so|f734090a4b51596d8166367feff546a30351aa5f
+vendor/lib64/libqcodec2_utils.so|962a6e0c003f2cc77fc60ce3b33a921518936997
+vendor/lib64/libqcodec2_v4l2codec.so|6fe7b9b36d89dad7079bbd1f40e2bff0f569d7a0
+vendor/lib64/qti.video.utils.videobufferlayout.so|8e2e540b33aa39e58529f4eaae9f5ac39b67bde7
 
 # Memory
 vendor/lib/libvmmem.so
@@ -570,6 +571,7 @@ system_ext/lib64/vendor.qti.hardware.qccsyshal@1.1.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2-halimpl.so
 system_ext/lib64/vendor.qti.hardware.qccsyshal@1.2.so
 system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so
+system_ext/lib64/vendor.qti.qccsyshal_aidl-V1-ndk.so
 system_ext/lib64/vendor.qti.qccvndhal_aidl-V1-ndk.so
 vendor/bin/qcc-vendor
 vendor/etc/init/init.qccvendor.rc
@@ -844,6 +846,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice

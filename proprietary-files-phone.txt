@@ -1,4 +1,4 @@
-# All blobs below are extracted from sapphire V816.0.11.0.UNGMIXM
+# All blobs below are extracted from topaz OS2.0.8.0.VMGMIXM
 
 # Bluetooth
 vendor/lib64/vendor.qti.hardware.bttpi-V2-ndk.so
@@ -138,7 +138,6 @@ vendor/etc/perf/targetavcsysnodesconfigs.xml
 vendor/etc/perf/targetconfig.xml
 vendor/etc/perf/targetresourceconfigs.xml
 vendor/etc/perf/targetsysnodesconfigs.xml
-vendor/etc/perf/thermalboost.conf
 
 # Peripheral Manager
 vendor/lib64/qtiPeripheralMgr.so

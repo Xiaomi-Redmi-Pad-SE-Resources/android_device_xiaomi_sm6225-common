@@ -230,23 +230,36 @@ _____________________________________________________
             <Limit name="frame-rate" range="1-60" />
             <Feature name="adaptive-playback" />
         </MediaCodec>
-        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true">
+        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" update="true" variant="slow-cpu">
             <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
             <Limit name="size" min="2x2" max="1280x720" />
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="8x8" />
-            <Limit name="block-count" range="1-3600" />
-            <Limit name="blocks-per-second" range="1-108000" />
-            <Limit name="bitrate" range="1-2000000" />
+            <Limit name="block-count" range="1-196608" />
+            <Limit name="blocks-per-second" range="1-2000000" />
+            <Limit name="bitrate" range="1-10000000" />
        </MediaCodec>
+       <MediaCodec name="c2.android.vp9.decoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="2x2" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-16384" />
+            <Limit name="blocks-per-second" range="1-500000" />
+            <Limit name="bitrate" range="1-40000000" />
+        </MediaCodec>
        <MediaCodec name="c2.android.avc.decoder" type="video/avc" update="true">
             <!-- profiles and levels:  ProfileHigh : Level51 -->
             <Limit name="size" min="2x2" max="1280x720" />
             <Limit name="alignment" value="2x2" />
-            <Limit name="block-size" value="16x16" />
-            <Limit name="block-count" range="1-3600" />
-            <Limit name="blocks-per-second" range="1-108000" />
-            <Limit name="bitrate" range="1-20000000" />
+            <Limit name="block-size" value="8x8" />
+            <Limit name="block-count" range="1-4096" />
+            <Limit name="blocks-per-second" range="1-259200" />
+            <Limit name="frame-rate" range="1-300" />
+            <Limit name="bitrate" range="1-10000000" />
+            <Limit name="quality" range="0-100"  default="80" />
+            <Limit name="complexity" range="0-10"  default="0" />
+            <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
             <Feature name="adaptive-playback" />
        </MediaCodec>
     </Decoders>
@@ -315,12 +328,30 @@ _____________________________________________________
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="8x8" />
             <Limit name="block-count" range="1-4096" /> <!-- max 512x512 -->
-            <Limit name="blocks-per-second" range="1-122880" />
-            <Limit name="frame-rate" range="1-120" />
+            <Limit name="blocks-per-second" range="1-259200" />
+            <Limit name="frame-rate" range="1-300" />
             <Limit name="bitrate" range="1-10000000" />
             <Limit name="complexity" range="0-10"  default="0" />
             <Limit name="quality" range="0-100"  default="80" />
             <Feature name="bitrate-modes" value="VBR,CBR,CQ" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.avc.encoder" type="video/avc" update="true" variant="slow-cpu">
+            <!-- profiles and levels:  ProfileMain : MainTierLevel51 -->
+            <Limit name="size" min="16x16" max="2048x2048" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-8192" /> <!-- max 2048x1024 -->
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-12000000" />
+            <Feature name="intra-refresh" />
+        </MediaCodec>
+        <MediaCodec name="c2.android.vp9.encoder" type="video/x-vnd.on2.vp9" update="true" variant="slow-cpu">
+             <!-- profiles and levels:  ProfileMain : Level_Version0-3 -->
+             <Limit name="size" min="2x2" max="2048x2048" />
+             <Limit name="alignment" value="1x1" />
+             <Limit name="block-size" value="16x16" />
+             <!-- 2016 devices can encode at about 8fps at this block count -->
+             <Limit name="block-count" range="1-3600" /> <!-- max 1280x720 -->
         </MediaCodec>
     </Encoders>
 </MediaCodecs>
