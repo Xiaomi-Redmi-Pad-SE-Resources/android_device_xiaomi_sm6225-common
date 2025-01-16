@@ -19,7 +19,6 @@ allow bluetooth system_app:binder { call transfer };
 allow bluetooth system_app:fd *;
 allow bluetooth vendor_dun_service:service_manager find;
 allow bluetooth hal_audio_hwservice:hwservice_manager find;
-dontaudit bluetooth netd_service:service_manager find;
 get_prop(bluetooth, vendor_display_prop)
 get_prop(bluetooth, vendor_audio_prop)
 binder_use(bluetooth)
