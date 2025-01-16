@@ -1,5 +1,5 @@
 # Unpinned blobs from topaz OS2.0.8.0.VMGMIXM
-# sapphiren: OS2.0.6.0.VNHMIXM
+# xun: OS2.0.1.0.VMUCNXM
 
 # ADSP
 vendor/bin/adsprpcd
@@ -19,18 +19,18 @@ vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 # ANT
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
-# Audio Dolby - from sapphiren
+# Audio Dolby - from xun
 vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|c6ebdaff686ba23391b72a69b0fdc4d2c95bb1ae
 vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
 vendor/etc/vintf/manifest/vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
 vendor/lib64/soundfx/libdlbvol.so|4f9e52ad0ce7b0950b0118ab9ededd168006f8ea
-vendor/lib64/soundfx/libhwdap.so|6220c4b3a3c7eab45957fa12388e4ea66b495428
-vendor/lib64/soundfx/libswgamedap.so|6927b04604519fa1e8d9df73f175d07807936688
-vendor/lib64/soundfx/libswvqe.so|6a793d6ea7b485b5bcbdbbe1633499de58ec4acb
-vendor/lib64/libdapparamstorage.so|e80857e364aab0ad2d03edfc8b304ad1c3bad35d
-vendor/lib64/libdlbdsservice.so|22e7590fcd8fb546f831315bb1571624eb5acd98
-vendor/lib64/libdlbpreg.so|5801fb7275c7bb83374887c5b3e671ba216d378f
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|6e1e9bc0f3f9cea00217164fee2e9f918f38d6b8
+vendor/lib64/soundfx/libhwdap.so|eec4666d6a30af79e351dc4aa6816503f76371eb
+vendor/lib64/soundfx/libswgamedap.so|53314531a686acd4c7c0b0b6746dbe8479839433
+vendor/lib64/soundfx/libswvqe.so|e75d0bf098d7e446f08c922c580ca79000a9ccbc
+vendor/lib64/libdapparamstorage.so|16c4c879d581fd599bd54d2b876bb3a29e4f2e7c
+vendor/lib64/libdlbdsservice.so|2d7dde37c3238f353013dbb92622cdb19aeec704
+vendor/lib64/libdlbpreg.so|3508e7b3cb1ff3484c921999c02fa97a0fd1d331
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|652bbb4857ff2d2d04403239ee09488e603ae2fe
 vendor/lib64/vendor.dolby.hardware.dms@2.0.so|fa62d676ff1df22fe050c4057e681a969cb5c77d
 
 # Audio SoundFX
@@ -433,7 +433,7 @@ vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
 
-# Media - from sapphiren
+# Media - from xun
 vendor/bin/hw/vendor.dolby.media.c2@1.0-service|47c5e28624a6f149c5a96347b5d04503832064cc
 vendor/bin/hw/vendor.qti.media.c2@1.0-service|9d89470c0bfda42b78b84187cd1cf5bf9f574e17
 vendor/bin/hw/vendor.qti.media.c2audio@1.0-service|5ee5c4a0648821ace34075eec238e20dd27fef83
@@ -442,19 +442,19 @@ vendor/etc/init/vendor.dolby.media.c2@1.0-service.rc|bc1e134139c7dd0e5b4f98952aa
 vendor/etc/init/vendor.qti.media.c2@1.0-service.rc|542d2ae2a92ee21dbb63716ff49392e8e6e433f4
 vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc|51841b9c67dd26b7fe82e24109f1e0a663a3e04a
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml|7801d5fb9104883e33e874011caa25c28b7bec71
-vendor/etc/vintf/manifest/c2_manifest_vendor_sapphire.xml|b2bf55472f4729c358ba86d310bed9397e231761
+vendor/etc/vintf/manifest/c2_manifest_vendor_xun.xml|b2bf55472f4729c358ba86d310bed9397e231761
 vendor/lib64/libEvrcSwCodec.so|baf0ea2a04ffd735d0ad49d1831330ecf6f28d0e
 vendor/lib64/libQcelp13SwCodec.so|af7fb39b8cab9d8bfad649045eff0ea3a96c44a0
-vendor/lib64/libcodec2_soft_ac4dec.so|2fd8fb415bf0a8c7af28116c44e1787201b5b989
-vendor/lib64/libcodec2_soft_ddpdec.so|c121d22973fbfedc508d0f94e3c82c70ea2ab491
+vendor/lib64/libcodec2_soft_ac4dec.so|5c89e061d5c42de45dd6d1206d71e95d05f7967c
+vendor/lib64/libcodec2_soft_ddpdec.so|2e67b322656005ffd696031f988667e292fc66df
 vendor/lib64/libcodec2_store_dolby.so|9d16d92301c4fa2f0a23726fe7bb97b2b291cf84
-vendor/lib64/libdeccfg.so|7f00a4121c068f6cd5d4a7d8c971fafe807c8950
+vendor/lib64/libdeccfg.so|27d9029086dacae9fd119605f4f50eb19b0155a8
 vendor/lib64/libdsd2pcm.so|cda87d311c7adb6fb1d61202a609bd916463ad92
 vendor/lib64/libqc2audio_base.so|00779587ada038abace9daad256a6a174f435067
 vendor/lib64/libqc2audio_basecodec.so|ea470367efc95c4f3678e341fead458494c147e5
 vendor/lib64/libqc2audio_core.so|ef04cb2507e9dd21127b64497d79da976cb1d4d6
 vendor/lib64/libqc2audio_hooks.so|bc4f233cd225127ceb5d098544eb48d71f871b7c
-vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF|3a5115bebf8a228400f3a89a4355d0ca4f13a6ba
+vendor/lib64/libqc2audio_hwaudiocodec.so;DISABLE_CHECKELF|c6ef51891686ce4a2d551253d7968c7fe6112fb8
 vendor/lib64/libqc2audio_platform.so|fcfcacfaf9fae2c18f7f1b5a563a5863a70dcfd5
 vendor/lib64/libqc2audio_swaudiocodec.so|081bd6d95cc63f24c3aea2fdc38e6872f71d81a3
 vendor/lib64/libqc2audio_utils.so|2d532831983585308dc5623ac7a78210d0232ce2

@@ -90,6 +90,7 @@
       <VALUE val="0xac000006" name="DevicePP_RX_Ultrasound_Gen"/>
       <VALUE val="0xac000007" name="DevicePP_RX_Voice_RVE"/>
       <VALUE val="0xac000008" name="DEVICEPP_RX_HPCM"/>
+      <VALUE val="0xac000080" name="DevicePP_Rx_Game"/>
       <VALUE val="0xac000081" name="DevicePP_RX_Karaoke"/>
     </KEY>
     <KEY name="DevicePP_Tx" id="0xad000000" description="Tx Device Post/Pre Processing Chain">
@@ -117,6 +118,7 @@
       <VALUE val="0xad000016" name="Audio_Fluence_NN_SM"/>
       <VALUE val="0xad000017" name="Voice_Recognition"/>
       <VALUE val="0xad000018" name="HFP_Sink_Fluence_NN_SM"/>
+      <VALUE val="0xad000080" name="DevicePP_Tx_Game"/>
       <VALUE val="0xad000081" name="Karaoke_Tx_PP"/>
     </KEY>
     <KEY name="StreamPP_RX" id="0xaf000000" description="Rx Stream Post/Pre Processing Chain">
@@ -124,6 +126,15 @@
     </KEY>
     <KEY name="StreamPP_TX" id="0xb0000000" description="Tx Stream Post/Pre Processing Chain">
       <VALUE val="0xb0000001" name="StreamPP_Tx_Default"/>
+    </KEY>
+    <KEY name="Spk_Mode" id="0x800000" description="Spk_Mode">
+      <VALUE val="0x0" name="Bypass_Mode"/>
+      <VALUE val="0x1" name="Music_Mode"/>
+      <VALUE val="0x2" name="Voice_Mode"/>
+      <VALUE val="0x3" name="Game_Mode"/>
+      <VALUE val="0x4" name="Video_Mode"/>
+      <VALUE val="0x5" name="Voip_Mode"/>
+      <VALUE val="0x6" name="FtmAt_Mode"/>
     </KEY>
     <KEY name="Volume" id="0xa4000000" description="Volume">
       <VALUE val="0x0" name="Level_0"/>
@@ -478,13 +489,6 @@
       <VALUE val="0x0" name="0x0"/>
       <VALUE val="0x1" name="0x1"/>
     </KEY>
-    <KEY name="SP_SPK_Mode" id="0x800000" description="SP_SPK_Mode">
-      <VALUE val="0x0" name="Bypass_Mode"/>
-      <VALUE val="0x1" name="Music_Mode_Misound"/>
-      <VALUE val="0x2" name="Music_Mode_Dolby"/>
-      <VALUE val="0x3" name="Voice_Mode"/>
-      <VALUE val="0x4" name="Voip_Mode"/>
-    </KEY>
     <KEY name="MISOUND_UPDATE" id="0xfc000000" description="MisoundUpdate">
       <VALUE val="0x0" name="MISOUND_NOUPDATE"/>
       <VALUE val="0x1" name="MISOUND_UPDATE"/>
@@ -517,7 +521,7 @@
     <KEY id="0xbf000000" name="SP_VI_Map"/>
     <KEY id="0xd2000000" name="Gain"/>
     <KEY id="0xd4000000" name="StreamChannels"/>
-    <KEY id="0x800000" name="SP_SPK_Mode"/>
+    <KEY id="0x800000" name="Spk_Mode"/>
   </CAL_KEY>
   <MODULE_TAGS>
     <TAG id="0xc0000004" name="device_hw_ep_rx" description="Hw EP Rx">
@@ -589,9 +593,6 @@
     <TAG id="0xc0001001" name="misound spk  module switch" description="misound spk module switch">
       <KEY id="0x10000" name="MISOUND_SPK_FX_Module_Switch"/>
     </TAG>
-    <TAG id="0xc0001101" name="misound spk module ll switch" description="misound spk module ll switch">
-      <KEY id="0x10000" name="MISOUND_SPK_FX_Module_Switch"/>
-    </TAG>
     <TAG id="0xc0001002" name="misound spk switch" description="misound spk switch">
       <KEY id="0x20000" name="MISOUND_SPK_FX_Switch"/>
     </TAG>
@@ -657,9 +658,6 @@
     </TAG>
     <TAG id="0xc0001022" name="misound karaoke switch" description="misound karaoke switch">
       <KEY id="0x1a0000" name="MISOUND_KARAOKE_SWITCH"/>
-    </TAG>
-    <TAG id="0xc0001029" name="module_sp_spk_mode" description="module_sp_spk_mode">
-      <KEY id="0x800000" name="SP_SPK_Mode"/>
     </TAG>
     <TAG id="0xc0000033" name="device_al" description="Device AL">
       <KEY id="0xd5000000" name="Input_Current_Limiter"/>
