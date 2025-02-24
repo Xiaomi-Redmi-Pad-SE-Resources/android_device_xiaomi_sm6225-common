@@ -268,9 +268,6 @@
     <!-- If this is true, the screen will fade off. -->
     <bool name="config_animateScreenLights">false</bool>
 
-    <!-- Whether to enable Lineage Health Service -->
-    <bool name="config_lineageHealthSupported">true</bool>
-
     <!-- Whether device has Turbo power charging support -->
     <bool name="config_hasTurboPowerCharger">true</bool>
 
