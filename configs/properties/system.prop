@@ -32,6 +32,7 @@ persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 ro.iorapd.enable=false
 
 # Media
+media.settings.xml=/vendor/etc/media_profiles_khaje_v0.xml
 media.aac_51_output_enabled=true
 media.stagefright.audio.deep=false
 media.stagefright.enable-aac=true
