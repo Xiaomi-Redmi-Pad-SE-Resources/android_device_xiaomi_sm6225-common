@@ -256,6 +256,7 @@ ro.control_privapp_permissions=enforce
 # Media
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec=4
 vendor.mm.enable.qcom_parser=16777215
 
 # Netflix

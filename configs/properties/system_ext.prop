@@ -3,6 +3,3 @@ dalvik.vm.dex2oat64.enabled=true
 
 # GPS
 persist.sys.gps.fence=true
-
-# Media
-vendor.media.target_variant=_khaje_v0
