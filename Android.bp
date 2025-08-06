@@ -1,7 +1,20 @@
 soong_namespace {
     imports: [
+        "hardware/qcom-caf/bootctrl",
         "hardware/xiaomi",
     ],
+}
+
+cc_binary {
+    name: "android.hardware.boot-service.qti",
+    defaults: ["android.hardware.boot-service.qti_defaults"],
+    static_libs: ["libgptutils.bengal"],
+}
+
+cc_binary {
+    name: "android.hardware.boot-service.qti.recovery",
+    defaults: ["android.hardware.boot-service.qti.recovery_defaults"],
+    static_libs: ["libgptutils.bengal"],
 }
 
 install_symlink {
