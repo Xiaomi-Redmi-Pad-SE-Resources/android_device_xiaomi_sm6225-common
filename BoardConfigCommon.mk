@@ -98,8 +98,46 @@ BOARD_BOOTCONFIG := \
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000
 
-TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_HEADER_ARCH := arm64
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225
+TARGET_KERNEL_CONFIG := \
+    gki_defconfig \
+    vendor/bengal_GKI.config \
+	vendor/xiaomi/bengal_GKI.config \
+    vendor/debugfs.config
+
+# Kernel modules
+BOARD_SYSTEM_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.system_dlkm))
+BOARD_SYSTEM_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.systemdlkm_blocklist.msm.bengal
+BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(TARGET_KERNEL_SOURCE)/modules.vendor_blocklist.msm.bengal
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.vendor_dlkm))
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load.first_stage))
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD  := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+BOOT_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.load.recovery))
+SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(COMMON_PATH)/modules.include.system_dlkm))
+
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/xiaomi/sm6225-modules
+TARGET_KERNEL_EXT_MODULES := \
+	qcom/opensource/mmrm-driver \
+	qcom/opensource/audio-kernel \
+	qcom/opensource/camera-kernel \
+	qcom/opensource/dataipa/drivers/platform/msm \
+	qcom/opensource/datarmnet/core \
+	qcom/opensource/datarmnet-ext/aps \
+	qcom/opensource/datarmnet-ext/offload \
+	qcom/opensource/datarmnet-ext/shs \
+	qcom/opensource/datarmnet-ext/perf \
+	qcom/opensource/datarmnet-ext/perf_tether \
+	qcom/opensource/datarmnet-ext/sch \
+	qcom/opensource/datarmnet-ext/wlan \
+	qcom/opensource/display-drivers/msm \
+	qcom/opensource/video-driver \
+	qcom/opensource/graphics-kernel \
+	qcom/opensource/securemsm-kernel \
+	qcom/opensource/touch-drivers \
+	qcom/opensource/wlan/platform \
+	qcom/opensource/wlan/qcacld-3.0 \
+	qcom/opensource/bt-kernel
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
