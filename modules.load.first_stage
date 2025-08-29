@@ -13,21 +13,16 @@ qcom_soc_wdt.ko
 minidump.ko
 qcom_logbuf_vh.ko
 qcom_cpu_vendor_hooks.ko
-mi_memory.ko
-ffu-mi.ko
 clk-smd-rpm.ko
 gcc-khaje.ko
 qcom-cpufreq-hw.ko
-qcom_ipc_logging.ko
 qcom-cpufreq-hw.ko
 clk-dummy.ko
 clk-qcom.ko
 cqhci.ko
 dcc_v2.ko
-debug-regulator.ko
 gdsc-regulator.ko
 icc-rpm.ko
-icc-debug.ko
 iommu-logger.ko
 memory_dump_v2.ko
 mem_buf_dev.ko
@@ -36,7 +31,6 @@ msm_dma_iommu_mapping.ko
 pinctrl-khaje.ko
 pinctrl-bengal.ko
 qnoc-bengal.ko
-ns.ko
 nvmem_qfprom.ko
 nvmem_qcom-spmi-sdam.ko
 phy-qcom-ufs.ko
@@ -54,7 +48,6 @@ spmi-pmic-arb.ko
 qcom-scm.ko
 qnoc-qos-rpm.ko
 qrtr.ko
-qti-regmap-debugfs.ko
 regmap-spmi.ko
 sched-walt.ko
 secure_buffer.ko
@@ -65,6 +58,7 @@ ufs_qcom.ko
 arm_smmu.ko
 mem-offline.ko
 sdhci-msm.ko
+sdhci-msm-scaling.ko
 rproc_qcom_common.ko
 qcom_glink_spss.ko
 usbpd.ko
@@ -80,6 +74,3 @@ qcom-pmu-lib.ko
 simtray.ko
 zram.ko
 zsmalloc.ko
-gaea.ko
-bootinfo.ko
-swinfo.ko
